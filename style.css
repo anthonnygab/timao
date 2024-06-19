@@ -1,0 +1,112 @@
+body {
+    background-image: linear-gradient(90deg, black, white);
+    font: normal 15pt Arial;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#inputs {
+    text-align: center;
+}
+
+#resposta {
+    border: 2px solid black;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    font: normal 15pt Arial;
+    font-weight: bold;
+}
+
+button {
+    border: 2px solid black;
+    outline: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #resposta {
+        width: 100%;
+        font-size: 14pt;
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14pt;
+    }
+
+    header {
+        font-size: 18pt;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #resposta {
+        font-size: 12pt;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 12pt;
+        padding: 8px;
+    }
+
+    header {
+        font-size: 16pt;
+    }
+
+    #video {
+        width: 100%;
+        height: auto;
+    }
+}
